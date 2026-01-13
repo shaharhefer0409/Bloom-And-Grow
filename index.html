@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom & Grow</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+      <meta property="og:image" content="https://bloom-and-grow-red.vercel.app/preview.png" />
+      <meta property="og:title" content="Bloom & Grow" />
+      <meta property="og:description" content="A non profit organization dedicated to creating community gardens. (Demo project)" />
+      <meta property="og:url" content="https://bloom-and-grow-red.vercel.app/" />
+
+      
+  </head>
+  <body>
+    <!--Navbar-->
+
+    <section id="navbar">
+      <nav
+        class="navbar navbar-expand-md custom-navbar-color position-fixed top-0 w-100 z-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bloom & Grow</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#ourgardens">Our Gardens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#joinus">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- hero-->
+
+    <section id="home">
+      <div id="hero" class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">
+          Growing Community, One Garden at a Time.
+        </h1>
+        <div class="col-lg-6 mx-auto order-3 text-body-emphasis">
+          <p class="lead mb-4 fw-bold">
+            We transform neglected urban spaces into vibrant community gardens
+            that feed families and educate children.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="#joinus"
+              class="btn fw-bold btn-lg px-4 gap-3 link text-decoration-none">
+              Join the Movement</a
+            >
+          </div>
+        </div>
+
+        <img
+          class="mt-5 rounded-4 border-dark shadow-lg"
+          src="https://engagement.source.colostate.edu/wp-content/uploads/sites/13/2022/05/PS-Download-1.91x1-2025-01-03T111313.377-1024x536.jpg"
+          alt="Community Garden"
+          width="80%" />
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="aboutus">
+      <div
+        class="container align-items-center justify-content-center d-flex flex-column flex-sm-row row-cols-2">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/M4W9f7iz68bh4X5Y6QUW3D.jpg"
+          alt=""
+          class="order-1 order-sm-0 col-10 col-sm-6 my-5 rounded-3 shadow-sm" />
+        <div class="text-center col-10 col-sm-6 ms-3 my-5">
+          <h1 class="display-5 fw-bold text-body-emphasis">Who We Are</h1>
+          <p class="text-center mb-4 fw-bold text-body-emphasis">
+            Founded in 2020, Bloom & Grow started with a single vacant lot and a
+            handful of seeds. Today, we manage sustainable urban gardens across
+            the city. Our mission is simple: to fight food insecurity by
+            providing fresh, organic produce to local food banks while creating
+            green sanctuaries for our neighbors to enjoy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--our Gardens-->
+    <section id="ourgardens">
+      <div
+        class="container d-flex flex-column flex-sm-row align-items-center align-items-md-stretch justify-content-center gap-4 my-5 flex-wrap">
+        <div class="card col-md-3 col-sm-8 col-10">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjPPYdkY7ETAjYCWSd3esOPqtgXKm8i4ClQ&s"
+            class="card-img-top"
+            alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title">The Northside Patch</h5>
+            <p class="card-text">
+              Our flagship location featuring 20 raised beds, a sensory garden
+              for kids, and a dedicated composting station.
+            </p>
+          </div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/38%C2%B005'27.5%22N+97%C2%B035'19.7%22W/@38.0909642,-97.5862171,17z/data=!3m1!4b1!4m4!3m3!8m2!3d38.09096!4d-97.588792?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            class="m-3 btn link"
+            >View In Map</a
+          >
+        </div>
+        <div class="card col-md-3 col-sm-8 col-10">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjPPYdkY7ETAjYCWSd3esOPqtgXKm8i4ClQ&s"
+            class="card-img-top"
+            alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title">Sunnyvale School Plot</h5>
+            <p class="card-text">
+              Located directly behind Sunnyvale Elementary, this garden focuses
+              on science education and after-school workshops.
+            </p>
+          </div>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/38%C2%B010'00.9%22N+100%C2%B004'17.7%22W/@38.1709026,-100.0537343,13z/data=!4m4!3m3!8m2!3d38.166921!4d-100.071587?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            class="btn m-3 link"
+            >View In Map</a
+          >
+        </div>
+        <div class="card col-md-3 col-sm-8 col-10">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjPPYdkY7ETAjYCWSd3esOPqtgXKm8i4ClQ&s"
+            class="card-img-top"
+            alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title">Riverside Green</h5>
+            <p class="card-text">
+              A fully wheelchair-accessible garden designed for seniors and
+              community gatherings near the river.
+            </p>
+          </div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/38%C2%B012'13.0%22N+110%C2%B011'43.8%22W/@38.2036092,-110.1929171,17z/data=!3m1!4b1!4m4!3m3!8m2!3d38.203605!4d-110.195492?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            class="m-3 btn link"
+            >View In Map</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--join us form-->
+    <section id="joinus" class="text-body-emphasis mb-5">
+      <div
+        class="d-flex mb-5 align-items-center text-center justify-content-center flex-wrap">
+        <div class="mb-4 d-flex flex-column m-5 col-sm-6 col-md-4 col-lg-3">
+          <h2 class="display-5fw-bold">Volunteer With Us</h2>
+          <p class="mb-4 fw-bold">
+            You don't need to be an expert gardener to help out. We need hands
+            for planting, watering, and organizing events.
+          </p>
+          <div class="mb-3">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullname" />
+          </div>
+          <div class="mb-3">
+            <label for="emailadress" class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailadress"
+              placeholder="example@mail.com" />
+          </div>
+          <div class="mb-3">
+            <label for="phonenumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phonenumber" />
+          </div>
+          <div class="mb-3">
+            <label for="helpoptions" class="form-label"
+              >How would you like to help?</label
+            >
+            <select
+              class="form-select"
+              id="helpoptions"
+              aria-label="Default select example">
+              <option selected>How would you like to help?</option>
+              <option value="1">Gardening</option>
+              <option value="2">Fundraising</option>
+              <option value="3">Education</option>
+            </select>
+          </div>
+          <button type="submit" class="link mt-4 btn fw-bold">
+            Sign Up Today
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section id="footer">
+      <footer class="py-3 mt-4 border-top border-dark text">
+        <div
+          class="d-flex justify-content-sm-between align-items-center gap-3 flex-column flex-sm-row">
+          <div class="text-center mx-5 gap-2 flex-column d-flex">
+            <span class="text-body-emphasis mb-3 mb-md-0 text-body-secondary"
+              >© 2026 Bloom & Grow. All Rights Reserved.</span
+            >
+            <span class="text-body-emphasis mb-3 mb-md-0 text-body-secondary"
+              >123 Green Way, Cityville | hello@bloomandgrow.org</span
+            >
+          </div>
+          <div class="justify-content-center col-6 col-sm-2 d-flex gap-4">
+            <a
+              href="https://getbootstrap.com/docs/4.0/components/forms/"
+              target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="black"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" /></svg
+            ></a>
+            <a
+              href="https://getbootstrap.com/docs/4.0/components/forms/"
+              target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="black"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" /></svg
+            ></a>
+            <a
+              href="https://getbootstrap.com/docs/4.0/components/forms/"
+              target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="black"
+                class="bi bi-twitter-x"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" /></svg
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
