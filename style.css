@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(11, 114, 16);
+}
+.navbar.custom-navbar-color {
+  background-color: rgb(163, 123, 84);
+}
+.btn {
+  background-color: rgb(216, 176, 67);
+  color: rgb(211, 210, 133);
+}
+.card {
+  background-color: rgb(200, 234, 201);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
+}
+.custom-link-color {
+  color: rgb(0, 0, 0);
+}
+
+.card p {
+  color: rgb(0, 0, 0);
+}
+.link {
+  color: rgb(0, 0, 0);
+}
+.btn:hover {
+  background-color: rgb(180, 140, 50);
+  color: rgb(255, 255, 255);
+}
+.link:hover {
+  color: rgb(255, 255, 255);
+}
+footer {
+  background-color: rgb(163, 123, 84);
+}
