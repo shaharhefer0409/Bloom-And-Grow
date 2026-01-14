@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
@@ -22,10 +23,10 @@ app.post('/api/server', (req, res) => {
  
     const transporter = nodemailer.createTransport({
         service: 'gmail',
-        auth: {
-            user: 'BloomAndGrowService@gmail.com',
-            pass: 'acrvnqpvvkcteayf' 
-        }
+auth: {
+    user: 'BloomAndGrowService@gmail.com',
+    pass: process.env.GMAIL_PASS // <--- SAFE!
+}
     });
 
 
@@ -45,19 +46,23 @@ app.post('/api/server', (req, res) => {
     };
 
 
+
     transporter.sendMail(mailToAdmin, (error, info) => {
         if (error) {
             console.log("Admin mail error: ", error);
-            return res.send("<h1>System Error: Could not process registration.</h1>");
+
+            return res.status(500).json({ success: false, message: "Admin mail failed" });
         }
         
-
         transporter.sendMail(mailToUser, (err, info) => {
-            if (err) console.log("User thank-you mail failed: ", err);
-            
- 
+            if (err) {
+                console.log("User mail error: ", err);
 
-res.sendFile(path.join(__dirname, '../success.html'));
+                return res.status(500).json({ success: false, message: "User mail failed" });
+            }
+            
+
+            res.status(200).json({ success: true, message: "Email sent!" });
         });
     });
 });
