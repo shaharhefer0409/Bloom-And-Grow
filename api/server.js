@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.post('/send-email', (req, res) => {
+app.post('/api/server', (req, res) => {
     
 
     const { fullname, email, phonenumber, choicemade } = req.body;
