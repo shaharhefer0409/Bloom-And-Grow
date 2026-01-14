@@ -1,7 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
-
+const path = require('path');
 app.use(express.urlencoded({ extended: true }));
 
 const PORT = 3000;
@@ -55,8 +55,9 @@ app.post('/api/server', (req, res) => {
         transporter.sendMail(mailToUser, (err, info) => {
             if (err) console.log("User thank-you mail failed: ", err);
             
+ 
 
-            res.send("<h1>Registration Successful! Check your email.</h1>");
+res.sendFile(path.join(__dirname, '../success.html'));
         });
     });
 });
